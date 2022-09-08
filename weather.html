@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="weather.css">
+        <title>Javascript API Weather App</title>
+    </head>
+    <body>
+        <main id="container">
+            <div id="locationAndDate">
+                <p id="LD"></p>
+                <button id="btn" onclick="getWeather(); buttonHide(this)">Find My Location</button>
+            </div>
+            <div id="holderBox">    
+                
+                <div id="animationHolder">
+                    <div id="sky">
+                        <div class="theSun">
+                            <div class="ray_box">
+                                <div class="ray ray1"></div>
+                                <div class="ray ray2"></div>
+                                <div class="ray ray3"></div>
+                                <div class="ray ray4"></div>
+                                <div class="ray ray5"></div>
+                                <div class="ray ray6"></div>
+                                <div class="ray ray7"></div>
+                                <div class="ray ray8"></div>
+                                <div class="ray ray9"></div>
+                                <div class="ray ray10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="holder2">   
+                <div id="currentTemp">
+                    <p id="cT"> Current Temp</p>
+                    <div id="temp"></div>
+                    <div id="iconHolder"></div>
+                 </div>
+                <div id="currentStats">
+                    <p id="curr"> Current Stats: </p>
+                    <div id="feelsLike"></div>
+                    <div id="pressure"></div>
+                    <div id="humidity"></div>
+                </div>
+                <div id="weatherByHour">
+                    <p id="wBH"> Next 18 Hours</p>
+                    <div id="hour1"></div>
+                    <div id="hour2"></div>
+                    <div id="hour3"></div>
+                    <div id="hour4"></div>
+                    <div id="hour5"></div>
+                    <div id="hour6"></div>
+                </div>
+                
+            </div> 
+            <div id="next5Days">
+                <p id="n5D"> Next 5 Days </p>
+                <div id="cont1">
+                    <div id="d1D"></div>
+                    <div id="d1H"></div>
+                    <div id="d1L"></div>
+                </div>
+                <div id="cont2">
+                    <div id="d2D"></div>
+                    <div id="d2H"></div>
+                    <div id="d2L"></div>
+                </div>
+                <div id="cont3">
+                    <div id="d3D"></div>
+                    <div id="d3H"></div>
+                    <div id="d3L"></div>
+                </div>
+                <div id="cont4">
+                    <div id="d4D"></div>
+                    <div id="d4H"></div>
+                    <div id="d4L"></div>
+                </div>
+                <div id="cont5">
+                    <div id="d5D"></div>
+                    <div id="d5H"></div>
+                    <div id="d5L"></div>
+                </div>
+                <!-- Next 5 will contain a div that houses the 5 individual days -->
+            </div>
+        </main>
+        <script src="weatherApp.js" ></script>
+    </body>
+</html>
+
+<!-- https://medium.com/@JonUK/designing-and-developing-a-responsive-weather-app-webpage-part-1-b155b004a5ba  website with follow along-->
